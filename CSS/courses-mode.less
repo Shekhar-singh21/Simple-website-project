@@ -1,0 +1,111 @@
+@import url('variables.less');
+@import url('mixins.less');
+
+.course-mode{
+    background-color: gray;
+    .inner{
+        h2{
+            font-size: 3rem;
+            padding-bottom: 1rem;
+        }
+        h6{
+            font-size: 1.5rem;
+            font-weight: 400;
+            padding-bottom: 2rem;
+        }
+    }
+    .mode-cards{
+        // width: 50%;
+        .mode-card{
+            background-color: white;
+            border-radius: @radius;
+            margin-top: 1rem;
+            
+            @media screen and (min-width:768px) {
+                display:flex;
+                justify-content: space-between;
+                
+                
+            }
+        }
+        
+    }
+}
+.mode-info{
+
+    @media screen and (min-width:768px) {
+        width: 50%;
+        border-right: 1px solid @gray-color-light;
+    
+    }
+    
+    h3{
+        font-size: 1.25rem;
+        padding-top: 1rem
+    }
+
+    
+    
+    .mode-title{
+        padding: 1.5rem;
+    }
+    .mode-subtitle{
+        padding: 1.5rem;
+
+        .fas{
+            color: @primary-color-light;
+        }
+
+        .subtitle-list{
+            margin-top: -1.5rem;
+            list-style-type: none;
+            li{
+                display: flex;
+                align-items: center;
+                padding-top: 0.5rem;
+                p{
+                    padding-left: 0.5rem;
+                }
+            }
+        }
+    }
+            
+}
+.modes-summery{
+    // width: 50%;
+    padding: 1.5rem;
+
+    line-height: 2;
+    border-top: 1px solid @gray-color-light;
+
+    @media screen and (min-width:768px) {
+        padding-top: 4rem;
+        padding-left: 1.5rem;
+        width: 50%;
+        
+
+    }
+        p{
+            padding-left: 0.24rem;
+            font-family: 400;
+
+        }
+        
+    .summery-title{
+        font-weight: 700;
+        
+    }
+    .summery-subtitle{
+        .summery-subtitle-list{
+            padding-top: 2rem;
+            li{
+                list-style-type: none;
+                display: flex;
+                align-items: center;
+                padding: 0.35rem 1.5rem;
+
+            }
+
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.outline {
+  box-shadow: 0 0 0 4px lightgray;
+}
+.shadow {
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.25);
+}
+.label {
+  background-color: #ddd;
+  display: inline-flex;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0 0 1rem 1rem;
+  margin: 0 1.5rem;
+}
+.tech-list {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .tech-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .tech-list .tech-info {
+    width: 50%;
+  }
+}
+.tech-list .tech-info .tech-title {
+  font-size: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+.tech-list .tech-info .icon-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tech-list .tech-info .icon-container .icon {
+  width: 4rem;
+  height: 4rem;
+  background-color: #eee;
+  box-shadow: -3rem 1rem 5rem #d8d8d8;
+  border-radius: 1rem;
+}
+.tech-list .tech-info .sub-title {
+  padding-top: 2rem;
+}
+.inner h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.inner .sub-heading {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}

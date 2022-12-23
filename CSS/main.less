@@ -1,0 +1,113 @@
+@import url('variables.less');
+@import url('mixins.less');
+
+
+*{
+    margin: 0;
+    padding: 0 ;
+}
+
+// font (Barlow)
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,200;0,400;0,700;0,900;1,400;1,700&display=swap');
+
+
+
+html {
+    font-size: 85%;
+
+    @media screen and (min-width:768px) {
+        font-size: 100%;
+    }
+
+    @media screen and (min_width:1440px) {
+        font-size: 115%;
+
+    }
+}
+
+body {
+    font-family: "Barlow", sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    letter-spacing: -0.050em;
+    margin: 0;
+    line-height: 1;
+}
+p{
+    line-height: 1.2;
+}
+
+// section - inner
+.section{
+    padding: 4rem 0;
+    .inner{
+        max-width: 1024px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 1.5rem;
+        margin: 0 auto;
+    }
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+
+    .logo {
+        width: 100px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .menu-button {
+        button{
+            outline: none;
+            background: transparent;
+            border: none;
+            font-size: 2.25rem;
+            border-radius: @radius;
+            display: block;
+            padding: 0.25rem 0.5rem;
+            cursor: pointer;
+
+            &:focus {
+                .outline()
+            }
+
+        }
+    }
+}
+.btn{
+    background-color:@primary-color ;
+    outline: none;
+    border: none;
+    border-radius: @radius;
+    padding: 0.75rem 0.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    color: white;
+
+    .fas,.fab,.far{
+        margin-left: 0.5rem;
+    }
+
+    &:hover{
+        background-color: @primary-color-light;
+    }
+
+
+    &:focus{
+       .outline();
+    }
+}
+

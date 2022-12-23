@@ -1,0 +1,38 @@
+@import url('variables.less');
+@import url('mixins.less');
+
+.foundation-course{
+    background-color: @gray-color-light;
+    margin-top: 3rem;
+    .cards{
+        @media screen and (min-width:768px) {
+            display: flex;           
+        }
+        .card{
+            background-color: white;
+        }
+        .course-content{
+            padding: 1.5rem;
+            box-sizing: border-box;
+            @media screen and (min-width:768px) {
+                width: 50%;
+                
+            }
+            h3{
+                font-size: 1.25rem;
+                font-weight: 700; 
+            }
+            p{
+                margin-top: 1rem;
+            }
+        }
+    }
+    
+}
+.inner{
+    h5{
+        font-weight: 400;
+        font-size: 1.5rem;
+        padding-top: 1rem;
+    }
+}

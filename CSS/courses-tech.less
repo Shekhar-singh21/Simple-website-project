@@ -1,0 +1,52 @@
+@import url('variables.less');
+@import url('mixins.less');
+
+
+.tech-list{
+    width: 100%;
+
+    @media screen and(min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    .tech-info{
+        @media screen and (min-width:768px) {
+            width: 50%;
+            
+        }
+        .tech-title{
+            font-size: 2rem;
+            padding-top: 3rem;
+            padding-bottom: 2rem;
+    
+        }
+        .icon-container{
+            display: flex;
+            flex-wrap: wrap;
+            .icon{
+                width: 4rem;
+                height: 4rem;
+                background-color: #eee;
+                // border: 1px solid black;
+                box-shadow: -3rem 1rem 5rem @gray-color-light;
+                border-radius: @radius;
+            }
+        }
+        .sub-title{
+            padding-top: 2rem;
+        }
+    }
+}
+.inner{
+    h1{
+        font-size: 3rem;
+        font-weight: 700;
+
+    }
+    .sub-heading{
+        font-size: 1.5rem;
+        padding-top: 1rem;
+    }
+}

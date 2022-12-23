@@ -1,0 +1,26 @@
+.outline {
+  box-shadow: 0 0 0 4px lightgray;
+}
+.shadow {
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.25);
+}
+.label {
+  background-color: #ddd;
+  display: inline-flex;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0 0 1rem 1rem;
+  margin: 0 1.5rem;
+}
+.footer {
+  margin: 0;
+  padding: 0;
+  background-color: #d8d8d8;
+  padding: 1.5rem;
+}
+.footer .footer-details h6 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.footer .footer-details p {
+  font-size: 0.75rem;
+}

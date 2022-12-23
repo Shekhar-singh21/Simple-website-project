@@ -1,0 +1,95 @@
+.outline {
+  box-shadow: 0 0 0 4px lightgray;
+}
+.shadow {
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.25);
+}
+.label {
+  background-color: #ddd;
+  display: inline-flex;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0 0 1rem 1rem;
+  margin: 0 1.5rem;
+}
+.course-mode {
+  background-color: gray;
+}
+.course-mode .inner h2 {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+.course-mode .inner h6 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-bottom: 2rem;
+}
+.course-mode .mode-cards .mode-card {
+  background-color: white;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .course-mode .mode-cards .mode-card {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mode-info {
+    width: 50%;
+    border-right: 1px solid #d8d8d8;
+  }
+}
+.mode-info h3 {
+  font-size: 1.25rem;
+  padding-top: 1rem;
+}
+.mode-info .mode-title {
+  padding: 1.5rem;
+}
+.mode-info .mode-subtitle {
+  padding: 1.5rem;
+}
+.mode-info .mode-subtitle .fas {
+  color: #887cec;
+}
+.mode-info .mode-subtitle .subtitle-list {
+  margin-top: -1.5rem;
+  list-style-type: none;
+}
+.mode-info .mode-subtitle .subtitle-list li {
+  display: flex;
+  align-items: center;
+  padding-top: 0.5rem;
+}
+.mode-info .mode-subtitle .subtitle-list li p {
+  padding-left: 0.5rem;
+}
+.modes-summery {
+  padding: 1.5rem;
+  line-height: 2;
+  border-top: 1px solid #d8d8d8;
+}
+@media screen and (min-width: 768px) {
+  .modes-summery {
+    padding-top: 4rem;
+    padding-left: 1.5rem;
+    width: 50%;
+  }
+}
+.modes-summery p {
+  padding-left: 0.24rem;
+  font-family: 400;
+}
+.modes-summery .summery-title {
+  font-weight: 700;
+}
+.modes-summery .summery-subtitle .summery-subtitle-list {
+  padding-top: 2rem;
+}
+.modes-summery .summery-subtitle .summery-subtitle-list li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding: 0.35rem 1.5rem;
+}

@@ -1,0 +1,142 @@
+.outline {
+  box-shadow: 0 0 0 4px lightgray;
+}
+.shadow {
+  box-shadow: 4px 4px 16px ;
+}
+* {
+  margin: 0;
+  padding: 0 ;
+}
+@font-face {
+  font-family: 'Barlow';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/barlow/v12/7cHrv4kjgoGqM7E_Ccs8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Barlow';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/barlow/v12/7cHsv4kjgoGqM7E_CfOA5Vop.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/barlow/v12/7cHqv4kjgoGqM7E3w-oc4A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/barlow/v12/7cHpv4kjgoGqM7EPCw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/barlow/v12/7cHqv4kjgoGqM7E3t-4c4A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/barlow/v12/7cHqv4kjgoGqM7E3j-wc4A.ttf) format('truetype');
+}
+html {
+  font-size: 85%;
+}
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 100%;
+  }
+}
+@media screen and (min_width: 1440px) {
+  html {
+    font-size: 115%;
+  }
+}
+body {
+  font-family: "Barlow", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: -0.025em;
+  margin: 0;
+  line-height: 1;
+}
+p {
+  line-height: 1.2;
+}
+.section {
+  padding: 4rem 0;
+}
+.section .inner {
+  max-width: 1024px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.topbar .logo {
+  width: 100px;
+}
+.topbar .logo img {
+  width: 100%;
+  height: auto;
+}
+.topbar .menu-button button {
+  outline: none;
+  background: transparent;
+  border: none;
+  font-size: 2.25rem;
+  border-radius: 1rem;
+  display: block;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
+.topbar .menu-button button:focus {
+  box-shadow: 0 0 0 4px lightgray;
+}
+.btn {
+  background-color: #6050E5;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.75rem 0.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+  color: white;
+}
+.btn .fas,
+.btn .fab,
+.btn .far {
+  margin-left: 0.5rem;
+}
+.btn:hover {
+  background-color: #887cec;
+}
+.btn:focus {
+  box-shadow: 0 0 0 4px lightgray;
+}

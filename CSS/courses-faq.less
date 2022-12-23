@@ -1,0 +1,38 @@
+@import url('variables.less');
+@import url('mixins.less');
+
+.faq-list{
+    margin-top: 3rem;
+    .que-list{
+        list-style-type: none;
+
+            .que-container{
+                margin-top: 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .question{
+                    .que{
+                        font-size: 1.25rem;
+                        font-weight: 400;
+                    }
+                }
+                .que-icon{
+                    display: flex;
+                    align-items: center;
+                    padding-left: 1.5rem;
+                }
+            }
+            .ans-container{
+                padding: 2rem 1.5rem 1.5rem 1.5rem;
+                
+            }
+        
+    }
+}
+.que-list{
+    li:not(:last-child){
+        border-bottom: 1px solid @gray-color-light;
+    }
+
+}

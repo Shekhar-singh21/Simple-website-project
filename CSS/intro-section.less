@@ -1,0 +1,89 @@
+@import url('variables.less');
+@import url('mixins.less');
+
+.intro-section {
+    background-color: #eee;
+
+    .inner {
+        padding: 0;
+
+        @media screen and (min-width:768px) {
+            display: flex;
+            align-items: center;
+
+        }
+
+        .info {
+            padding: 1.5rem;
+            >h1 {
+                font-size: 3rem;
+
+            }
+
+            >h6 {
+                font-size: 2rem;
+                text-transform: capitalize;
+                font-weight: 400;
+                margin-top: 1.5rem;
+            }
+
+            .btn {
+                margin-top: 3rem;
+            }
+
+        }
+    }
+}
+
+    .stack-container {
+        padding: 1.5rem ;
+
+        .stacks {
+            background-color: white;
+            border-radius: @radius;
+            width: 100%;
+            .shadow();
+
+            @media screen and (min-width:768px) {
+                min-width: 320px;
+                max-width: 360px;
+                
+            }
+
+            .label {
+                background-color: @gray-color;
+                display: inline-flex;
+                padding: 0.5rem 0.75rem;
+                border-radius: 0 0 @radius @radius;
+                margin: 0 1.5rem;
+            }
+
+            .stacks-list {
+                list-style-type: none;
+
+                li {
+                    padding: 1.5rem;
+
+                    .title {
+                        font-size: 1.25rem;
+                        font-weight: 700;
+
+                    }
+
+                    .subtitle {
+                        font-size: 0.75rem;
+                        font-weight: 400;
+                        line-height: 1;
+                        margin-top: 0.5rem;
+                    }
+
+                }
+
+                li+li {
+                    border-top: 1px solid @gray-color-light;
+                }
+
+            }
+
+        }
+    }    

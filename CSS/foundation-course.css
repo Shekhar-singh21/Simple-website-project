@@ -1,0 +1,46 @@
+.outline {
+  box-shadow: 0 0 0 4px lightgray;
+}
+.shadow {
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.25);
+}
+.label {
+  background-color: #ddd;
+  display: inline-flex;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0 0 1rem 1rem;
+  margin: 0 1.5rem;
+}
+.foundation-course {
+  background-color: #d8d8d8;
+  margin-top: 3rem;
+}
+@media screen and (min-width: 768px) {
+  .foundation-course .cards {
+    display: flex;
+  }
+}
+.foundation-course .cards .card {
+  background-color: white;
+}
+.foundation-course .cards .course-content {
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 768px) {
+  .foundation-course .cards .course-content {
+    width: 50%;
+  }
+}
+.foundation-course .cards .course-content h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.foundation-course .cards .course-content p {
+  margin-top: 1rem;
+}
+.inner h5 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
